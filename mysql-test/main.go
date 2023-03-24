@@ -13,7 +13,7 @@ func main() {
 	db.InitMysql()
 	RequestLogs := models.NewRequestLogs()
 	start := time.Now()
-	for i := 0; i < 1000000; i++ {
+	for i := 0; i < 5000000; i++ {
 		addRequestLogs, err := generateRequest()
 		if err != nil {
 			return
