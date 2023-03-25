@@ -77,7 +77,7 @@ func randJsonString(minLen, maxLen int) string {
 	rand.Seed(time.Now().UnixNano())
 	randLen = rand.Intn(maxLen-minLen+1) + minLen
 
-	randJSONStr := `{`
+	randJsonStr := `{`
 	for i := 0; i < randLen; i++ {
 		randInt := 1
 		if min >= max || min == 0 || max == 0 {
@@ -85,9 +85,9 @@ func randJsonString(minLen, maxLen int) string {
 		}
 		randInt = rand.Intn(max-min) + min
 		randInt2 := rand.Intn(max-min) + min
-		randJSONStr += `"` + wordsSlice[randInt] + `":` + `"` + wordsSlice[randInt2] + `",`
+		randJsonStr += `"` + wordsSlice[randInt] + `":` + `"` + wordsSlice[randInt2] + `",`
 	}
-	randJSONStr = strings.Trim(randJSONStr, ",")
-	randJSONStr += `}`
-	return randJSONStr
+	randJsonStr = strings.Trim(randJsonStr, ",")
+	randJsonStr += `}`
+	return randJsonStr
 }
