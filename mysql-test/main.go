@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"log"
 	"math/rand"
 	"mysql-test/db"
@@ -23,9 +22,9 @@ func main() {
 		if err != nil {
 			return
 		}
-		fmt.Println(i)
+		log.Println(i)
 	}
-	fmt.Println("耗时：", time.Since(start))
+	log.Println("耗时：", time.Since(start))
 }
 
 func generateRequest() (models.AddRequestLogs, error) {
