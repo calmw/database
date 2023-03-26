@@ -9,3 +9,10 @@
     - mysql：5h8m9.844109167s, mysql本次平均每秒插入270条
     - mongodb: 1h28m39.358680791s, mongo本次平均每秒插入940条
     - 本次测试两者都未加索引，在相同的资源环境下，数据中json键值对数量随机，从3-15不等，最终插入速度大约相差3.5倍
+#### mysql查询，以及优化
+- 查询1
+- ![select1.png](..%2Fimages%2Fselect1.png)
+- 增加索引
+- ![add_index1.png](..%2Fimages%2Fadd_index1.png)
+- 添加索引后查询
+- ![select2.png](..%2Fimages%2Fselect2.png)
