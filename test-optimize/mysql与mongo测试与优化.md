@@ -1,6 +1,6 @@
 #### 插入数据对比
 
-- 数据格式 [**数据样本**](../images/data-demo.png)
+- 数据格式 [**数据样本**](../static/data-demo.png)
 - 插入一百万条数据对比
     - mysql：58m4.782290875s, mysql本次平均每秒插入287条
     - mongodb: 16m58.691230958s, mongo本次平均每秒插入980条
